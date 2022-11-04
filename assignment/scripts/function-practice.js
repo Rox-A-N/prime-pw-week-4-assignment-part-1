@@ -66,34 +66,34 @@ console.log('The last item in the array is: ' ,getLast()); //no error message sh
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 
-// function find( value, array ){           //I am stuck here, the value meaning is unclear to me
-//   for (let i=0; i < array.length; i++) {  //error message: cannot read properties of undefined (reading 'length')
-//     if ([i] === array) {
-//       console.log(true);
-//     } else {
-//       console.log(false);
-//     }
-//   }
-// }
-// find();
+function find(){          
+  for (let i = 0; i < array.length; i++) {  
+    if ([] === array) {
+      console.log(true);
+    } else {
+      console.log(false);
+    }
+  }
+}
+find();  //this iterates through the array returning false, my issue is figuring out where to put my array value to test
 
 // ----------------------
 // Stretch Goals
 // ----------------------
 // 8. Function to check if a letter is the first letter in a 
 //    string. Return true if it is, and false otherwise
-function isFirstLetter(letter, string) {
+// function isFirstLetter(letter, string) {
 
-}
-console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
-console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
+// }
+// console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
+// console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
 
-// 9. Function to return the sum of all numbers in an array
-function sumAll( ) {
-  let sum = 0
-  // TODO: loop to add items
-  return sum;
-}
+// // 9. Function to return the sum of all numbers in an array
+// function sumAll( ) {
+//   let sum = 0
+//   // TODO: loop to add items
+//   return sum;
+// }
 
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
