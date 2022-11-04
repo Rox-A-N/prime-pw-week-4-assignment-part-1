@@ -14,11 +14,11 @@ console.log('Test - should say "Hello World!"', hello());
 
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
-function helloName( name ) {
-  return 'Kirby!';
+function helloName() {
+  return 'Hello Kirby!';
 }
 // Remember to call the function to test
-console.log('Test- Hello,' ,helloName());
+console.log('Test-' ,helloName());
 
 // 3. Function to add two numbers together & return the result
 function addNumbers( firstNumber, secondNumber ) {  // added secondNumber to argument
@@ -55,24 +55,27 @@ console.log( 'isPositive - should say false', isPositive(-3) );
 const array = ['blue', 'box', 'bird', 'food']; //using this array for next item
 
 function getLast() {
-  return array.slice(-1);
+  for (const _last_ of array) {  //this didn't work until I used _last_ in my for of statement
+    return array.slice(-1);  
+  } 
 }
-getLast(); //no error message shows, I just get no response
+console.log('The last item in the array is: ' ,getLast()); //no error message shows, I just get no response
+
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 
-function find( value, array ){           //I am stuck here, the value meaning is unclear to me
-  for (let i=0; i < array.length; i++) {  //error message: cannot read properties of undefined (reading 'length')
-    if ([i] === array) {
-      console.log(true);
-    } else {
-      console.log(false);
-    }
-  }
-}
-find();
+// function find( value, array ){           //I am stuck here, the value meaning is unclear to me
+//   for (let i=0; i < array.length; i++) {  //error message: cannot read properties of undefined (reading 'length')
+//     if ([i] === array) {
+//       console.log(true);
+//     } else {
+//       console.log(false);
+//     }
+//   }
+// }
+// find();
 
 // ----------------------
 // Stretch Goals
