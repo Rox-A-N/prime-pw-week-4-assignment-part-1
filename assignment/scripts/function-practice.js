@@ -18,7 +18,7 @@ function helloName() {
   return 'Hello Kirby!';
 }
 // Remember to call the function to test
-console.log('#2: Test -' ,helloName());
+console.log('#2: Test -' ,helloName('Hello Kirby!'));
 
 // 3. Function to add two numbers together & return the result
 function addNumbers( firstNumber, secondNumber ) {  // added secondNumber to argument
