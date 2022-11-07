@@ -68,14 +68,16 @@ console.log('The last item in the array is: ' ,getLast()); //no error message sh
 
 function find(){          
   for (let i = 0; i < array.length; i++) {  
-    if ([] === array) {
+    if (array === array) {  // once I set array to === array I got true in the console
       console.log(true);
     } else {
       console.log(false);
     }
+    return array;
   }
 }
-find();  //this iterates through the array returning false, my issue is figuring out where to put my array value to test
+//find();  //this iterates through the array returning true, my issue is figuring out where to put my array value to test
+console.log(find());
 
 // ----------------------
 // Stretch Goals
