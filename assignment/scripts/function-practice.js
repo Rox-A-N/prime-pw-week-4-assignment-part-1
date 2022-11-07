@@ -9,7 +9,7 @@ function hello() {
   return 'Hello World!';
 }
 // Call the function to test
-console.log('Test - should say "Hello World!"', hello());
+console.log('#1: Test - should say "Hello World!"', hello());
 
 
 // 2. Function to return an personalized hello, using the `name` argument.
@@ -18,20 +18,20 @@ function helloName() {
   return 'Hello Kirby!';
 }
 // Remember to call the function to test
-console.log('Test-' ,helloName());
+console.log('#2: Test -' ,helloName());
 
 // 3. Function to add two numbers together & return the result
 function addNumbers( firstNumber, secondNumber ) {  // added secondNumber to argument
   return firstNumber + secondNumber;  //uncommented this line
 }
-console.log('Test- Two numbers added together equal:' ,addNumbers(77, 2838));
+console.log('#3: Test - Two numbers added together equal:' ,addNumbers(77, 2838));
 
 
 // 4. Function to multiply three numbers & return the result
 function multiplyThree(firstNumber, secondNumber, thirdNumber ) {
   return firstNumber * secondNumber * thirdNumber;
 }
-console.log('Test- three numbers multiplied equal:' ,multiplyThree(3, 32, 20));
+console.log('#4: Test - three numbers multiplied equal:' ,multiplyThree(3, 32, 20));
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
@@ -45,9 +45,9 @@ function isPositive( number ) {
 
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
-console.log( 'isPositive - should say true', isPositive(3) );
-console.log( 'isPositive - should say true', isPositive(0) );  //changed 'false' to 'true in the string statement
-console.log( 'isPositive - should say false', isPositive(-3) );
+console.log( '#5-1: isPositive - should say true', isPositive(3) );
+console.log( '#5-2: isPositive - should say true', isPositive(0) );  //changed 'false' to 'true in the string statement
+console.log( '#5-3: isPositive - should say false', isPositive(-3) );
 
 
 // 6. Function to return the _last_ item in an array. If the 
@@ -59,7 +59,7 @@ function getLast() {
     return array.slice(-1);  
   } 
 }
-console.log('The last item in the array is: ' ,getLast()); //no error message shows, I just get no response
+console.log('#6: The last item in the array is: ' ,getLast()); //no error message shows, I just get no response
 
 
 // 7. Function to find a value in an array. Return true if the 
@@ -69,26 +69,29 @@ console.log('The last item in the array is: ' ,getLast()); //no error message sh
 function find(){          
   for (let i = 0; i < array.length; i++) {  
     if (array === array) {  // once I set array to === array I got true in the console
-      console.log(true);
+     return true;
     } else {
-      console.log(false);
+      return false;
     }
-    return array;
   }
 }
 //find();  //this iterates through the array returning true, my issue is figuring out where to put my array value to test
-console.log(find());
+console.log('#7: ', find());
 
 // ----------------------
 // Stretch Goals
 // ----------------------
 // 8. Function to check if a letter is the first letter in a 
 //    string. Return true if it is, and false otherwise
-// function isFirstLetter(letter, string) {
-
-// }
-// console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
-// console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
+function isFirstLetter(letter, string) {
+  if (letter === string.charAt(0)) {
+    return true;
+  } else {
+    return false;
+  }
+ }
+ console.log( 'Stretch #8-1: isFirstLetter - should say true', isFirstLetter('a', 'apple') );
+ console.log( 'Stretch #8-2: isFirstLetter - should say false', isFirstLetter('z', 'apple') );
 
 // // 9. Function to return the sum of all numbers in an array
 // function sumAll( ) {
